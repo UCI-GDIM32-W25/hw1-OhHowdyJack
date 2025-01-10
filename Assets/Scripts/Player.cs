@@ -20,6 +20,14 @@ public class Player : MonoBehaviour
     private void Update()
     {
         _rigidBody2D.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * _speed;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+
+        {
+
+            Instantiate(_plantPrefab, transform.position, Quaternion.identity);
+
+        }
     }
 
     public void PlantSeed ()
