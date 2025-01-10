@@ -5,10 +5,15 @@
 Put your notes from the W1L2 (Thurs, Jan 9) in-class activity here.
 https://docs.google.com/document/d/1fGfiAsCCjFu1pjs5OtMj13L0ge45Ec4dYU46yPN-lpc/edit?usp=sharing
 ## Devlog
-Prompt: Include the HW1 break-down exercise you wrote during the Week 1 - Lecture 2 (Jan 9) in-class activity (above). If you did not attend and perform this activity, review the lecture slides and write your own plan for how you believe HW1 should be built. If your initially proposed plan turned out significantly different than the activity answers given by Prof Reid, you may want to note what was different. Then, write about how the plan you wrote in the break-down connects to the code you wrote. Cite specific class names and method names in the code and GameObjects in your Unity Scene.
+Prompt: Include the HW1 breakdown exercise you wrote during the Week 1 - Lecture 2 (Jan 9) in-class activity (above). If your initially proposed plan turned out significantly different than the activity answers given by Prof Reid, you may want to note what was different. Then, write about how the plan you wrote in the breakdown connects to the code you wrote. Cite specific class names and method names in the code and GameObjects in your Unity Scene.
 
 
-Write your Devlog here!
+## Write your Devlog here:
+  My plan was not very different from Prof. Reid's answer key. A bulk of my plan's actions and logic were similar, with a few minor details missing. I had all of the player input on my plan but what I initially failed to include was the look of the sprites, I later added in that the player sprite is represented by a bunny, and the prefab is represented by a pixelated plant seed. 
+
+  In my breakdown, I note that the player has to have 2 different actions: Movement Action and Planting Action. Before anything, I wanted to get my player moving and the prefab action completed (as it was fresh in my mind). Within the game's code, I decided to use a [SerializeField] private 2D rigid body called _rigidBody2D. I also wanted to declare a [SerializeField] private gameobject called _plantPrefab, which is where I will input my Plant prefab. Once I had movement set up, I began to create what on my plan was called 'Planting Action.' I used the instantiate function to spawn the _plantPrefab gameobject at the same position as the player. 
+
+  
 
 
 ## Open-Source Assets
