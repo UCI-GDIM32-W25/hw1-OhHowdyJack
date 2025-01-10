@@ -9,11 +9,11 @@ Prompt: Include the HW1 breakdown exercise you wrote during the Week 1 - Lecture
 
 
 ## Write your Devlog here:
-  My plan was not very different from Prof. Reid's answer key. A bulk of my plan's actions and logic were similar, with a few minor details missing. I had all of the player input on my plan but what I initially failed to include was the look of the sprites, I later added in that the player sprite is represented by a bunny, and the prefab is represented by a pixelated plant seed. 
+  My plan was not very different from Prof. Reid's answer key. A bulk of my plan's actions and logic were similar, with a few details missing. I had all of the player input on my plan but what I initially failed to include was the look of the sprites, I later added in that the player sprite is represented by a bunny, and the prefab is represented by a pixelated plant seed. I also had forgotten to mention how UI text is its own object in question 3, but I did mention its functionality.
 
-  In my breakdown, I note that the player has to have 2 different actions: Movement Action and Planting Action. Before anything, I wanted to get my player moving and the prefab action completed (as it was fresh in my mind). Within the game's code, I decided to use a [SerializeField] private 2D rigid body called _rigidBody2D. I also wanted to declare a [SerializeField] private gameobject called _plantPrefab, which is where I will input my Plant prefab. Once I had movement set up, I began to create what on my plan was called 'Planting Action.' I used the instantiate function to spawn the _plantPrefab gameobject at the same position as the player. 
+  In my breakdown, I note that the player has to have 2 different actions: Movement Action and Planting Action. Before anything, I wanted to get my player moving and the prefab action completed (as it was fresh in my mind). Within the game's code, I decided to use a [SerializeField] private 2D rigid body called _rigidBody2D. I also wanted to declare a [SerializeField] private gameobject called _plantPrefab, which is where I will input my Plant prefab. Once I had movement set up, I began to create what on my plan was called 'Planting Action.' I used the instantiate function to spawn the _plantPrefab gameobject at the same position as the Player gameobject once the player has pushed Space (or in other words, KeyCode.Space). 
 
-  
+  Once the player Object was completely set up, I began work on the UI. I created a Canvas with 4 UI Text objects: Seeds Planted (Text), Seeds Planted [Number], Seeds Remaining (Text), and Seeds Remaining [Number]. UI with the [Number] at the end is the text that updates when the planting action takes place. UI with (Text) are the objects that will not update at all and are referenced on the breakdown as "Seeds Planted UI" and "Seeds Remaining UI." 
 
 
 ## Open-Source Assets
